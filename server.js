@@ -13,7 +13,7 @@ const SequelizeStore = require('connect-session-sequelize')(session.Store);
 const newSession = {
     secret: 'whoknows',
     cookie: {
-        expires: 60 * 60 *1000
+        expires: 60 * 60 * 1000
     },
     resave: true,
     rolling: true,
@@ -31,6 +31,6 @@ app.engine('handlebars', hndlbrs.engine);
 app.set('view engine', 'handlebars');
 app.use(routes);
 
-sequelize.sync({force: false }).then(() => {
+sequelize.sync({ force: false }).then(() => {
     app.listen(PORT, () => console.log('Now listening on port 3002.'));
 });
