@@ -15,11 +15,11 @@ async function loginFormHandler(event) {
         });
 
         if (response.ok) {
-            document.location.replace('/dashboard/');
+            document.location.replace('/dashboard');
         } else {
             alert(response.statusText);
         }
     }
 }
 
-document.querySelector('.edit-post-btn').addEventListener('click', editFormHandler);
+document.querySelector('.login-form').addEventListener('click', loginFormHandler);

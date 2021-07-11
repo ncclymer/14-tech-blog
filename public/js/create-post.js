@@ -22,4 +22,4 @@ if  (response.ok) {
 }
 }
 
-document.querySelector('.mew-post-form').addEventListener('submit', newFormHandler);
+document.querySelector('.new-post-form').addEventListener('submit', newFormHandler);
