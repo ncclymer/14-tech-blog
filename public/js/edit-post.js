@@ -7,14 +7,14 @@ async function editFormHandler(event) {
         window.location.toString().split('/').length - 1
     ];
 
-    const response = await fetch(`api/posts/${id}`, {
+    const response = await fetch(`/api/posts/${id}`, {
         method: 'PUT',
         body: JSON.stringify({
             title,
             post_content
         }),
         headers: {
-            'Content-Type': 'application.json'
+            'Content-Type': 'application/json'
         }
     });
 
