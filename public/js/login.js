@@ -17,7 +17,7 @@ async function loginFormHandler(event) {
       if (response.ok) {
         document.location.replace('/dashboard');
       } else {
-        alert(response.statusText);
+        alert("Please create a user account by clicking the signup button.");
       }
     }
   }
