@@ -1,7 +1,10 @@
 * {
     box-sizing: border-box;
   }
-  
+  body{
+    background-color: rgb(0, 95, 184);
+  }
+
   body, html {
     height: 100%;
     padding: 0;
@@ -10,14 +13,21 @@
     color: #333;
   }
   
+  #back {
+    color:white;
+  }
   a {
     text-decoration: none;
     font-weight: bold;
-    color: black;
+    font-size: large;
   }
   
   a:hover {
     color: #3486eb;
+  }
+
+  .title {
+    color: white;
   }
   
   button {
@@ -56,6 +66,7 @@
   
   form label {
     display: block;
+    color: white;
   }
   
   .wrapper {
@@ -65,6 +76,13 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+  }
+
+  .navbar {
+    background-color: rgb(0, 95, 184)   
+  }
+  .navbar-item{
+    color: white;
   }
   
   header {
@@ -114,7 +132,7 @@
   .post .title span {
     font-style: italic;
     font-size: 90%;
-    color: #7d7d7d;
+    color: white;
   }
   
   .edit-link {
